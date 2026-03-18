@@ -3,112 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta
+      name="description"
+      content="동키의 Today I Learn 페이지입니다. 프로필, 기본 정보, 갤러리, 인생 작품, 그리고 매일의 학습 기록을 한 화면에 담았습니다."
+    />
+    <meta property="og:title" content="동키의 Today I Learn" />
+    <meta
+      property="og:description"
+      content="배운 것을 기록으로 남기고, 기록을 다시 성장의 재료로 쓰는 학습자의 자기소개 페이지입니다."
+    />
+    <meta property="og:image" content="./images/profile-dongkey.svg" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
-
-    <title>Today I Learn</title>
+    <title>동키의 Today I Learn</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
-      </ul>
-    </nav>
+    <header id="top">
+      <nav class="top-nav">
+        <a class="nav-logo" href="#top">Dongkey TIL</a>
+        <ul class="nav-links">
+          <li><a href="#intro">자기소개</a></li>
+          <li><a href="#info">기본 정보</a></li>
+          <li><a href="#gallery">갤러리</a></li>
+          <li><a href="#works">인생 작품</a></li>
+          <li><a href="#til">TIL</a></li>
+        </ul>
+      </nav>
 
-    <!-- 프로필 히어로 -->
-    <section class="hero" id="about">
-      <div class="profile-card">
-        <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+      <section class="hero" id="profile">
+        <div class="hero-surface">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img
+                src="./images/profile-dongkey.svg"
+                alt="노트북 앞에서 메모와 함께 학습하고 있는 동키의 일러스트 프로필"
+              />
+            </div>
+            <div class="profile-info">
+              <p class="eyebrow">Backend Learner · Today I Learn</p>
+              <h1>동키, 오늘 배운 걸 자꾸 적어두는 사람</h1>
+              <p class="tagline">
+                배운 걸 그냥 넘기면 금방 잊어버려서, 이것저것 적어두는
+                중입니다.
+              </p>
+              <div class="hero-links">
+                <a href="https://github.com/dongkey777" target="_blank" rel="noreferrer"
+                  >깃허브 보러가기</a
+                >
+                <a href="#til">오늘의 TIL 보기</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </header>
 
     <main>
-      <!-- 자기소개 -->
-      <section class="content-section">
+      <section class="content-section intro-section" id="intro">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+        <p>
+          안녕하세요. 동키입니다. 공부한 걸 그냥 지나치면 금방 흐릿해지는
+          느낌이 들어서, 요즘은 짧게라도 기록을 남기려고 하고 있습니다.
+        </p>
+        <p>
+          테스트 코드, 리팩터링, 그리고 HTML/CSS/JavaScript 같은 기본기를
+          하나씩 익히는 중이고, 이 페이지도 배운 걸 직접 써보면서 정리해보려고
+          만들었습니다. 조금 느리더라도 이해한 내용을 제 말로 남겨두는 쪽을 더
+          좋아합니다. 더 많은 기록은
+          <a href="https://github.com/dongkey777" target="_blank" rel="noreferrer">GitHub</a>
+          에 남기고 있고, 최근에는
+          <a href="https://woowacourse.io" target="_blank" rel="noreferrer">우아한테크코스</a>
+          미션을 수행하면서 기능 요구사항을 코드와 테스트로 옮기는 연습을
+          계속하고 있습니다.
+        </p>
       </section>
 
-      <!-- 기본 정보 -->
       <section class="content-section" id="info">
         <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
         <table class="info-table">
-          <tr>
-            <th>이름</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>MBTI</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>취미</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>좋아하는 음식</th>
-            <td></td>
-          </tr>
+          <caption class="visually-hidden">
+            동키의 기본 정보를 정리한 표
+          </caption>
+          <tbody>
+            <tr>
+              <th scope="row">이름</th>
+              <td>이동훈</td>
+            </tr>
+            <tr>
+              <th scope="row">닉네임</th>
+              <td>동키</td>
+            </tr>
+            <tr>
+              <th scope="row">MBTI</th>
+              <td>INTJ</td>
+            </tr>
+            <tr>
+              <th scope="row">취미</th>
+              <td>러닝, 사진 정리, 길게 산책하며 생각 정리하기</td>
+            </tr>
+            <tr>
+              <th scope="row">좋아하는 음식</th>
+              <td>국밥, 초밥, 토마토 파스타</td>
+            </tr>
+            <tr>
+              <th scope="row">관심사</th>
+              <td>테스트 코드, 리팩터링, 기록 중심 학습</td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
-      <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">요즘 자주 떠오르는 장면들</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <figure class="gallery-card">
+            <img src="./images/gallery-01.jpg" alt="햇살이 비치는 푸른 산 능선 풍경" />
+            <figcaption>
+              <strong>첫 커밋</strong>
+              <span>하루의 문을 여는 가장 확실한 버튼</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-02.jpg" alt="안개 낀 호수와 산이 겹쳐 보이는 풍경" />
+            <figcaption>
+              <strong>종이 메모</strong>
+              <span>막히는 순간일수록 손으로 구조를 적습니다</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-03.jpg" alt="탁 트인 산길과 하늘이 이어지는 풍경" />
+            <figcaption>
+              <strong>오운완</strong>
+              <span>생각이 길어질수록 몸부터 움직입니다</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-04.jpg" alt="숲길 사이로 햇빛이 드는 자연 풍경" />
+            <figcaption>
+              <strong>집중 루틴</strong>
+              <span>커피 한 잔과 체크리스트는 늘 같이 갑니다</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-05.jpg" alt="눈 덮인 산맥이 멀리 펼쳐진 풍경" />
+            <figcaption>
+              <strong>리뷰 읽기</strong>
+              <span>한 줄 피드백이 하루를 바꾸는 날이 많습니다</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-06.jpg" alt="석양 아래 넓은 들판과 구름이 보이는 풍경" />
+            <figcaption>
+              <strong>디버깅</strong>
+              <span>불편한 로그 속에 답이 숨어 있습니다</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-07.jpg" alt="푸른 바다와 하얀 파도가 이어지는 해변 풍경" />
+            <figcaption>
+              <strong>한 끼 회복</strong>
+              <span>잘 먹어야 오래 집중할 수 있다고 믿습니다</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-08.jpg" alt="노을빛이 비치는 하늘과 강가 풍경" />
+            <figcaption>
+              <strong>비 오는 날</strong>
+              <span>느린 날엔 오히려 생각이 또렷해집니다</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="./images/gallery-09.jpg" alt="초록 숲과 호수가 함께 보이는 고요한 풍경" />
+            <figcaption>
+              <strong>야간 빌드</strong>
+              <span>끝까지 붙잡은 날의 만족감은 유난히 큽니다</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <!-- 나를 울린 인생 작품 -->
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
-        <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
-            <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
-            </div>
-            <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
-            </div>
-          </article>
-        </div>
+        <ol class="works-list">
+          <li>
+            <article class="work-card">
+              <div class="work-thumbnail">
+                <img
+                  src="./images/gallery-05.jpg"
+                  alt="눈 덮인 산맥과 하늘이 이어진 풍경"
+                />
+              </div>
+              <div class="work-info">
+                <h3>인터스텔라</h3>
+                <p>
+                  답을 당장 얻지 못하더라도 끝까지 질문을 포기하지 않는 사람들의
+                  태도 때문에 자주 다시 찾게 되는 영화입니다. 거대한 우주를
+                  다루면서도 결국은 한 사람의 선택과 약속으로 돌아오는 방식이
+                  오래 남았습니다.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="work-card work-card--video">
+              <div class="work-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/7d_jQycdQGo?si=5xWQn9oqhZ8xLL7N"
+                  title="위플래쉬 예고편"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="work-info">
+                <h3>위플래쉬</h3>
+                <p>
+                  몰입과 집요함이 어디까지 사람을 밀어 올릴 수 있는지 보여줘서
+                  강하게 기억에 남는 작품입니다. 때로는 지나치게 거칠고 불편한
+                  장면도 있지만, 그래서 더 성장의 대가와 태도를 오래 생각하게
+                  만들었습니다.
+                </p>
+              </div>
+            </article>
+          </li>
+        </ol>
       </section>
 
-      <!-- TIL (Today I Learned) -->
       <section class="content-section" id="til">
         <h2>TIL</h2>
-        <p class="section-desc">오늘 새롭게 배운 것들을 기록합니다.</p>
+        <p class="section-desc">
+          그날 배운 걸 짧게라도 적어두려고 만든 공간입니다.
+        </p>
 
-        <!-- TIL 작성 폼 -->
         <form class="til-form" id="til-form">
           <div class="form-group">
             <label for="til-date">날짜</label>
@@ -116,33 +243,56 @@
           </div>
           <div class="form-group">
             <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
+            <input
+              type="text"
+              id="til-title"
+              name="title"
+              placeholder="학습 주제를 입력하세요"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="til-content">내용</label>
-            <textarea id="til-content" name="content" placeholder="오늘 배운 내용을 정리해주세요" required></textarea>
+            <textarea
+              id="til-content"
+              name="content"
+              placeholder="오늘 배운 내용을 정리해주세요"
+              required
+            ></textarea>
           </div>
           <div class="form-actions">
             <button type="submit">등록</button>
             <button type="reset">초기화</button>
           </div>
+          <p class="form-status" id="form-status" aria-live="polite">
+            작성한 TIL은 이 브라우저에 저장됩니다.
+          </p>
         </form>
 
-        <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
         <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
           <article class="til-item">
-            <time>2026-03-15</time>
-            <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
+            <time datetime="2026-03-15">2026-03-15</time>
+            <h3>HTML 시맨틱 태그</h3>
+            <p>
+              header, nav, main, section, article, footer를 역할 기준으로
+              구분해서 쓰면 문서 구조가 훨씬 읽기 쉬워진다는 점을 다시 느꼈다.
+            </p>
+          </article>
+          <article class="til-item">
+            <time datetime="2026-03-17">2026-03-17</time>
+            <h3>CSS Grid와 카드 레이아웃</h3>
+            <p>
+              정사각형 이미지가 일정하게 반복되는 갤러리는 Flex보다 Grid가 더
+              예측 가능했고, gap과 aspect-ratio만으로도 꽤 안정적인 배치를 만들
+              수 있었다.
+            </p>
           </article>
         </div>
       </section>
-
     </main>
 
     <footer>
-      <p>&copy; My Page</p>
+      <p>&copy; 2026 Dongkey. Built with HTML, CSS and JavaScript.</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">동키 프로필 일러스트</title>
+  <desc id="desc">노트북과 메모, 커피가 놓인 책상 앞에 앉아 있는 학습자의 추상 일러스트</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7d6bf" />
+      <stop offset="100%" stop-color="#d6ece5" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" rx="54" fill="url(#bg)" />
+  <circle cx="350" cy="120" r="44" fill="#fff7ef" opacity="0.8" />
+  <rect x="84" y="304" width="312" height="92" rx="28" fill="#f7f1ea" />
+  <rect x="160" y="204" width="160" height="108" rx="28" fill="#f2b07f" />
+  <circle cx="240" cy="162" r="64" fill="#ffdec5" />
+  <path d="M191 159c16-17 35-27 49-27 13 0 32 10 49 27" fill="#4f342a" />
+  <circle cx="216" cy="170" r="6" fill="#4f342a" />
+  <circle cx="264" cy="170" r="6" fill="#4f342a" />
+  <path d="M216 197c10 10 38 10 48 0" fill="none" stroke="#8c4e3f" stroke-linecap="round" stroke-width="5" />
+  <rect x="124" y="244" width="232" height="112" rx="20" fill="#fffaf5" stroke="#c1552f" stroke-width="6" />
+  <rect x="150" y="266" width="180" height="16" rx="8" fill="#dfeee9" />
+  <rect x="150" y="296" width="120" height="16" rx="8" fill="#f2d0ba" />
+  <rect x="86" y="256" width="62" height="44" rx="12" fill="#12514c" />
+  <rect x="332" y="248" width="34" height="64" rx="14" fill="#d27d58" />
+  <rect x="340" y="232" width="18" height="18" rx="9" fill="#fff7ef" />
+  <text x="240" y="436" fill="#4f342a" font-family="sans-serif" font-size="34" font-weight="700" text-anchor="middle">Dongkey</text>
+</svg>
